@@ -37,7 +37,7 @@ const Calculator = () => {
                               <KeyBackgroundContext.Provider value={{ keyBackground, setKeyBackground }}>
                                 <DelResetBackgroundContext.Provider value={{ delResetBackground, setDelResetBackground }}>
                                   <section className={`min-h-screen pt-4 ${screenBackground}`}>
-                                    <div className='w-[90%] mx-auto sm:w-[60%] sm:border-green-700 md:w-1/2 border-2 lg:w-1/3'>
+                                    <div className='w-[90%] mx-auto sm:w-[60%] sm:border-green-700 md:w-1/2  lg:w-1/3'>
                                       <div className='mt-6'><Theme /></div>
                                       <div className='mt-10'><Result /></div>
                                       <div><Keypad /></div>

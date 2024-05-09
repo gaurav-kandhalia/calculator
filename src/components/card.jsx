@@ -1,10 +1,10 @@
 import { useContext, useEffect, useState } from "react";
-import { KeyShadowContext, num1Context,num2Context } from "../context/context";
+import { KeyShadowContext, num1Context,ResetShadowContext } from "../context/context";
 
 const Card = ({ val, bg, text, shadow }) => {
-  const { num1, setnum1, num2, setnum2 } = useContext(num1Context);
+  const { num1, setnum1} = useContext(num1Context);
   const { KeysShadow } = useContext(KeyShadowContext);
-
+   const {ResetShadow} = useContext(ResetShadowContext)
 
   const handleNumberClick = () => {
     switch (val) {
@@ -54,7 +54,7 @@ useEffect(()=>{
 },[num1])
 
   return (
-    <div className={` w-[70px] h-[70px] flex justify-center items-center font-[700] text-[32px] mx-auto bg-${bg} text-${text} rounded-lg ${KeysShadow} md:w-[90px] md:h-[60px] hover:`} onClick={handleNumberClick} >
+    <div className={` w-[70px] h-[70px] flex justify-center items-center font-[700] text-[32px] mx-auto bg-${bg} text-${text} rounded-lg ${shadow}  md:w-[90px] md:h-[60px] hover:`} onClick={handleNumberClick} >
       <p>{val}</p>
     </div>
   );

@@ -39,10 +39,11 @@ const Theme = () => {
      setKeyBackground('[#e5e4e1]')
      setResultBackground('bg-[#d1cccc]')
      setKeypadBackground('bg-[#d1cccc]')
-     setTextKey('black')
+     setTextKey('[#35352c]')
      setTextResult('text-black')
      setKeysShadow('shadow-KeyShadow2')
      setequalBackground('[#ca5502]')
+     setResetShadow('shadow-ResetShadow2')
      
     }
     if (theme === 2) {
@@ -55,7 +56,8 @@ const Theme = () => {
       setTextResult('text-[#ffe53d]')
       setKeysShadow('shadow-custom')
       setequalBackground('[#00e0d1]');
-      setKeysShadow('shadow-KeyShadow3')
+      setKeysShadow('shadow-KeyShadow3');
+      setResetShadow('shadow-ResetShadow3')
     }
     if (theme === 0) {
       setScreenBackground('bg-[#3a4764]')
@@ -67,6 +69,7 @@ const Theme = () => {
       setTextResult('text-white');
      setKeysShadow('shadow-KeyShadow1')
      setequalBackground('[white]')
+     setResetShadow('shadow-ResetShadow1')
     }
 
   }, [theme])
@@ -99,7 +102,7 @@ const Theme = () => {
         <div className={`text-[32px]  font-[600]  `}>
           <p>calc</p>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 ">
           <div className="text-white">
             <p className={`mt-5 font-[600] ${TextResult}`}>THEME</p>
           </div>

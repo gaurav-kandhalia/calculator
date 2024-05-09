@@ -141,7 +141,7 @@ const Keypad = () => {
         "val": "RESET",
         "bg": delResetBackground,
         "text": "white",
-        "shadow":""
+        "shadow":ResetShadow
       },
       {
         "val": "=",
